@@ -3,8 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 
-console.log(cors, "here");
-
 const app = express();
 
 // app.use(cors({
