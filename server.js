@@ -21,7 +21,7 @@ app.use(cors());
 //     next();
 //   });
 app.use(morgan("tiny"));
- 
+
 const products = require("./routes/routes");
 const search = require("./routes/searchRoute");
 // router
@@ -36,6 +36,10 @@ const port = process.env.PORT || 3200;
 
 // database
 require("./config/conn");
+
+app.get("/", function (req, res) {
+  res.send("Hello Welcome to Simple API");
+});
 
 // listening
 app.listen(port, () => {
