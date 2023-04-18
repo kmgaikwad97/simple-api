@@ -23,7 +23,7 @@ app.use(cors());
 //     next();
 //   });
 app.use(morgan("tiny"));
-
+ 
 const products = require("./routes/routes");
 const search = require("./routes/searchRoute");
 // router
