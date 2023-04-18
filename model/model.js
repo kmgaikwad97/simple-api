@@ -17,7 +17,7 @@ const ProductSchema = new mongoose.Schema({
     description:{
         type:String,
         required:false
-    }
+    } 
 },
 { timestamps: true })
 
